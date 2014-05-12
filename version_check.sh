@@ -41,7 +41,7 @@ local_to_upstream_packnames() {
 	fi
 }
 
-RELEASES="saucy saucy-updates trusty"
+RELEASES="saucy saucy-updates"
 SOURCES="main universe"
 
 sources_download() {
