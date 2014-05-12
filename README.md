@@ -1,5 +1,7 @@
-unity-gentoo
-============
+unity-gentoo (legacy branch 'Saucy Salamander' release)
+======================================================
+
+This branch can be used as it is WITHOUT any warranty and/or maintanence support!
 
 A Gentoo overlay to install the Unity desktop
 
