@@ -1,6 +1,6 @@
-# Copyright 1999-2014 Gentoo Foundation
+# Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Header: /var/cvsroot/gentoo-x86/gnome-base/gnome-core-apps/Attic/gnome-core-apps-3.8.0.ebuild,v 1.7 2014/04/26 17:55:43 pacho dead $
 
 EAPI="5"
 
@@ -12,7 +12,7 @@ IUSE="+bluetooth +cdr cups"
 
 # when unmasking for an arch
 # double check none of the deps are still masked !
-#KEYWORDS="~alpha ~amd64 ~arm ~ia64 ~ppc ~ppc64 ~sparc ~x86"
+KEYWORDS="~alpha amd64 ~arm ~ia64 ~ppc ~ppc64 ~sparc x86"
 
 # Note to developers:
 # This is a wrapper for the core apps tightly integrated with GNOME 3
@@ -20,10 +20,10 @@ IUSE="+bluetooth +cdr cups"
 RDEPEND="
 	>=gnome-base/gnome-core-libs-${PV}[cups?]
 
-	>=gnome-base/gnome-session-3.8
+	>=gnome-base/gnome-session-${PV}
 	>=gnome-base/gnome-menus-${PV}:3
-	>=gnome-base/gnome-settings-daemon-3.8[cups?]
-	>=unity-base/unity-control-center-14.04.3[cups?]
+	>=gnome-base/gnome-settings-daemon-${PV}[cups?]
+	>=gnome-base/gnome-control-center-${PV}[cups?]
 
 	>=app-crypt/gcr-${PV}
 	>=gnome-base/nautilus-${PV}
@@ -36,7 +36,7 @@ RDEPEND="
 	>=gnome-extra/gnome-contacts-${PV}
 	>=media-gfx/eog-${PV}
 	>=media-video/totem-${PV}
-	>=net-im/empathy-3.8
+	>=net-im/empathy-${PV}
 	>=x11-terms/gnome-terminal-${PV}
 
 	>=gnome-extra/gnome-user-docs-${PV}
@@ -47,7 +47,7 @@ RDEPEND="
 	>=x11-themes/gnome-icon-theme-symbolic-${PV}
 	>=x11-themes/gnome-themes-standard-${PV}
 
-	bluetooth? ( >=net-wireless/gnome-bluetooth-3.8 )
+	bluetooth? ( >=net-wireless/gnome-bluetooth-${PV} )
 	cdr? ( >=app-cdr/brasero-${PV} )
 
 	!gnome-base/gnome-applets

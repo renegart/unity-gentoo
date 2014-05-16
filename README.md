@@ -1,5 +1,6 @@
-unity-gentoo (legacy branch 'Saucy Salamander' release)
-======================================================
+unity-gentoo 
+============
+(legacy branch 'Saucy Salamander' release)
 
 This branch can be used as it is WITHOUT any warranty and/or maintanence support!
 
@@ -14,7 +15,6 @@ A Gentoo overlay to install the Unity desktop
 * Select one of the unity-gentoo profiles listed with 'emerge profile list'
 
 * emerge -aqv unity-build-env
--> this package sets all keywords needed for specific Unity version
 
 * emerge -uDNvta unity-meta
 
