@@ -8,6 +8,7 @@
 =*/gnome*-*10*::gentoo
 >=dev-cpp/gtkmm-3.10.0::gentoo
 >=dev-libs/folks-0.9.6::gentoo
+>=dev-libs/gjs-1.38::gentoo
 >=dev-libs/libgweather-3.10.0::gentoo
 >=media-gfx/eog-3.10.0::gentoo
 >=app-editors/gedit-3.10.0::gentoo
@@ -22,7 +23,7 @@
 >=sys-apps/baobab-3.10.0::gentoo
 >=x11-wm/mutter-3.10.4::gentoo
 >=www-client/epiphany-3.10.3::gentoo
-
+>=net-misc/vinagre-3.10::gentoo
 
 ## These are packages maintained within the overlay that must not be emerged from the main portage tree ##
 
@@ -41,6 +42,7 @@ gnome-base/gconf::gentoo
 gnome-base/gnome-control-center::gentoo
 gnome-base/gnome-desktop::gentoo
 gnome-base/gnome-fallback::gentoo
+gnome-base/librsvg::gentoo
 gnome-base/gnome-menus:3::gentoo
 gnome-base/gnome-panel::gentoo
 gnome-base/gnome-session::gentoo
@@ -53,7 +55,7 @@ gnome-extra/nm-applet::gentoo
 gnome-extra/polkit-gnome::gentoo
 gnome-extra/zeitgeist::gentoo
 mail-client/thunderbird::gentoo
-#media-libs/glew::gentoo
+media-libs/glew::gentoo
 media-libs/mesa::gentoo
 media-sound/rhythmbox::gentoo
 net-im/empathy::gentoo
