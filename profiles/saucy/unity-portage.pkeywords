@@ -3,8 +3,8 @@
 */*::unity-gentoo
 
 ## GNOME keyword unmasking ##
-app-accessibility/at-spi2-atk
-app-accessibility/at-spi2-core
+~app-accessibility/at-spi2-atk-2.10.2
+~app-accessibility/at-spi2-core-2.10.2
 app-accessibility/caribou
 =app-accessibility/orca-3.8*
 =app-admin/gnome-system-log-3.8*
@@ -15,12 +15,12 @@ app-accessibility/caribou
 =app-text/evince-3.8*
 ~dev-libs/folks-0.9.3
 ~dev-libs/gjs-1.36.1
-dev-libs/libgee
-dev-libs/libpeas
+~dev-libs/libgee-0.12.1
+~dev-libs/libpeas-1.9.0
 ~dev-libs/nspr-4.10.2
 ~dev-libs/totem-pl-parser-3.4.5
 =dev-libs/libgweather-3.8*
-gnome-base/dconf
+~gnome-base/dconf-0.18.0
 =gnome-base/gdm-3.8*
 =gnome-base/gnome-control-center-3.8*::unity-gentoo
 =gnome-base/gnome-core-apps-3.8*
@@ -33,7 +33,7 @@ gnome-base/gnome-menus:0
 =gnome-base/gnome-settings-daemon-3.8*::unity-gentoo
 =gnome-base/gsettings-desktop-schemas-3.8*::unity-gentoo
 =gnome-base/gnome-shell-3.8*
-gnome-base/gvfs
+~gnome-base/gvfs-1.18.3
 =gnome-base/libgnomekbd-3.6*
 =gnome-base/libgnome-keyring-3.8*
 =gnome-base/nautilus-3.8*::unity-gentoo
@@ -72,8 +72,8 @@ media-gfx/shotwell
 ~media-plugins/alsa-plugins-1.0.27
 =net-libs/gnome-online-accounts-3.8*
 ~net-libs/gupnp-igd-0.2.2
-net-libs/libsoup
-net-libs/libsoup-gnome
+~net-libs/libsoup-2.44.2
+~net-libs/libsoup-gnome-2.44.2
 net-libs/rest
 =net-wireless/gnome-bluetooth-3.8*
 =sys-apps/baobab-3.8*
@@ -82,11 +82,11 @@ net-libs/rest
 ~sys-apps/hwids-20130915.1
 ~sys-apps/gentoo-systemd-integration-2
 ~x11-libs/gdk-pixbuf-2.30.1
-x11-libs/gnome-pty-helper
+~x11-libs/gnome-pty-helper-0.34.9
 ~x11-libs/libdrm-2.4.46
 x11-libs/mx
 ~x11-libs/pango-1.36.1
-x11-libs/vte
+~x11-libs/vte-0.34.9
 ~x11-libs/xpyb-1.3.1
 =x11-terms/gnome-terminal-3.8*
 =x11-themes/gnome-backgrounds-3.8*
@@ -106,7 +106,7 @@ app-text/gtkspell
 dev-lang/orc
 ~dev-lang/perl-5.16.1
 ~dev-cpp/gtkmm-3.8.1
-dev-cpp/glibmm
+~dev-cpp/glibmm-2.38.2
 dev-lang/vala
 dev-libs/atk
 =dev-libs/boost-1.53*
@@ -168,7 +168,7 @@ media-sound/pulseaudio
 net-im/telepathy-logger
 net-im/telepathy-mission-control
 net-libs/farstream
-net-libs/glib-networking
+~net-libs/glib-networking-2.38.2
 net-libs/liboauth
 net-libs/telepathy-farstream
 net-libs/telepathy-glib
