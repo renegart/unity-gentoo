@@ -171,8 +171,8 @@ src_install() {
 
 	# Add Region and Language locale support #
 	#  Unable to use Unity's language-selector as it needs a complete apt/dpkg enabled system #
-	exeinto /usr/bin
-	doexe "${FILESDIR}/unity-cc-region"
+#	exeinto /usr/bin
+#	doexe "${FILESDIR}/unity-cc-region"
 	insinto /usr/share/applications
 	doins "${FILESDIR}/unity-language-selector.desktop"
 }

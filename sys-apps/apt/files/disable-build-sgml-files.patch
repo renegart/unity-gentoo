@@ -1,0 +1,15 @@
+diff -Nur utopic_orig/doc/po4a.conf utopic/doc/po4a.conf
+--- utopic_orig/doc/po4a.conf	2014-08-29 21:17:44.000000000 +0200
++++ utopic/doc/po4a.conf	2014-08-31 15:04:19.715710747 +0200
+@@ -27,9 +27,9 @@
+ [type: manpage] apt-sortpkgs.1.xml $lang:$lang/apt-sortpkgs.$lang.1.xml add_$lang:xml.add
+ [type: manpage] apt-ftparchive.1.xml $lang:$lang/apt-ftparchive.$lang.1.xml add_$lang:xml.add
+ 
+-[type: sgml]    guide.sgml $lang:$lang/guide.$lang.sgml
++#[type: sgml]    guide.sgml $lang:$lang/guide.$lang.sgml
+ #                 add_$lang::$lang/addendum/debiandoc_$lang.add
+-[type: sgml]    offline.sgml $lang:$lang/offline.$lang.sgml
++#[type: sgml]    offline.sgml $lang:$lang/offline.$lang.sgml
+ #                 add_$lang::$lang/addendum/debiandoc_$lang.add
+ #[type: sgml]    cache.sgml $lang:$lang/cache.$lang.sgml \
+ #                add_$lang::$lang/addendum/debiandoc_$lang.add

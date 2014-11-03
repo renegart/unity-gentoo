@@ -56,7 +56,7 @@ src_prepare() {
 	sed -i '/0002-create-and-manage-groups-like-on-a-ubuntu-system.patch/d' "${WORKDIR}/debian/patches/series" || die
 	sed -i '/0002-create-and-manage-groups-like-on-a-debian-system.patch/d' "${WORKDIR}/debian/patches/series" || die
 	sed -i '/0006-adduser_instead_of_useradd.patch/d' "${WORKDIR}/debian/patches/series" || die
-	sed -i '/0009-language-tools.patch/d' "${WORKDIR}/debian/patches/series" || die
+#	sed -i '/0009-language-tools.patch/d' "${WORKDIR}/debian/patches/series" || die
 	sed -i '/0010-set-language.patch/d' "${WORKDIR}/debian/patches/series" || die
 	sed -i '/0013-add-has-message-support.patch/d' "${WORKDIR}/debian/patches/series" || die
 	sed -i '/1001-buildsystem.patch/d' "${WORKDIR}/debian/patches/series" || die
