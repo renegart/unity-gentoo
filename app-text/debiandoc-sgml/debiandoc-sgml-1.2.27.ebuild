@@ -39,7 +39,7 @@ pkg_pretend() {
 }
 
 src_prepare() {
-	perl-module_src_prep
+	perl-module_src_configure
 	sed -e "s#\$(pkg_format_dir) \$(pkg_bin_dir)#${VENDOR_LIB}/DebianDoc_SGML/Format /usr/share/\$(pkg_name)#" \
 		-i Makefile || die
 }
