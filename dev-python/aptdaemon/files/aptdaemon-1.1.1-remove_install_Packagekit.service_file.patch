@@ -1,0 +1,13 @@
+diff -Nur aptdaemon-1.1.1+bzr980_orig/setup.py aptdaemon-1.1.1+bzr980/setup.py
+--- aptdaemon-1.1.1+bzr980_orig/setup.py	2014-08-21 14:56:35.000000000 +0200
++++ aptdaemon-1.1.1+bzr980/setup.py	2015-01-03 14:36:10.539213736 +0100
+@@ -48,8 +48,7 @@
+                   ("share/apport/package-hooks",
+                    ["apport/aptdaemon.py"]),
+                   ("share/dbus-1/system-services/",
+-                   ["data/org.debian.apt.service",
+-                    "data/org.freedesktop.PackageKit.service"]),
++                   ["data/org.debian.apt.service"]),
+                   ("share/lintian/profiles/ubuntu/",
+                    ["data/lintian/ubuntu/aptdaemon.profile"]),
+                   ("share/lintian/profiles/debian/",

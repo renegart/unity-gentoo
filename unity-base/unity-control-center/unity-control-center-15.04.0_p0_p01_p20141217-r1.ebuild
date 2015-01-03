@@ -6,7 +6,7 @@ EAPI="5"
 GNOME2_LA_PUNT="yes"
 GCONF_DEBUG="yes"
 
-URELEASE="utopic"
+URELEASE="vivid"
 inherit autotools base bzr eutils gnome2 ubuntu-versionator vala
 
 UURL="mirror://ubuntu/pool/main/u/${PN}"
@@ -19,7 +19,7 @@ SRC_URI="${UURL}/${MY_P}${UVER_PREFIX}.orig.tar.gz"
 LICENSE="GPL-2+"
 SLOT="0"
 IUSE="+cups +gnome-online-accounts +i18n +socialweb v4l"
-KEYWORDS="~amd64 ~ppc ~ppc64 ~x86 ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~x86-solaris"
+#KEYWORDS="~amd64 ~ppc ~ppc64 ~x86 ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~x86-solaris"
 RESTRICT="mirror"
 
 # False positives caused by nested configure scripts
@@ -101,7 +101,7 @@ RDEPEND="${COMMON_DEPEND}
 		net-print/cups-pk-helper )
 	unity-base/unity-settings-daemon[input_devices_wacom]
 
-	>=gnome-base/gnome-control-center-3.10
+	unity-base/language-selector
 
 	!<gnome-base/gdm-2.91.94
 	!<gnome-extra/gnome-color-manager-3.1.2
@@ -168,13 +168,6 @@ src_install() {
 	# Remove all installed language files as they can be incomplete #
 	#  due to being provided by Ubuntu's language-pack packages #
 	rm -rf "${ED}usr/share/locale"
-
-	# Add Region and Language locale support #
-	#  Unable to use Unity's language-selector as it needs a complete apt/dpkg enabled system #
-#	exeinto /usr/bin
-#	doexe "${FILESDIR}/unity-cc-region"
-	insinto /usr/share/applications
-	doins "${FILESDIR}/unity-language-selector.desktop"
 }
 
 pkg_preinst() { gnome2_icon_savelist; }
