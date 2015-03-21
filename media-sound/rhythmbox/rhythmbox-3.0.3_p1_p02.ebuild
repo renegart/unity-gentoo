@@ -32,7 +32,7 @@ REQUIRED_USE="
 	ipod? ( udev )
 	mtp? ( udev )
 	dbus? ( python )
-	python? ( ${PYTHON_REQUIRED_USE} )
+	python? ( ^^ ( $(python_gen_useflags '*') ) )
 	webkit? ( python )
 "
 

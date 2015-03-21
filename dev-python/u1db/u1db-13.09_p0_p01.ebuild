@@ -5,10 +5,10 @@
 EAPI=5
 PYTHON_COMPAT=( python2_7 )
 
+URELEASE="utopic"
 inherit distutils-r1 ubuntu-versionator
 
 UURL="mirror://ubuntu/pool/universe/u/${PN}"
-URELEASE="utopic"
 
 DESCRIPTION="U1DB is a database API for synchronised databases of JSON documents"
 HOMEPAGE="https://launchpad.net/u1db"
