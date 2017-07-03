@@ -7,6 +7,9 @@ x11-base/xorg-drivers::gentoo
 
 # Requires >=x11-libs/gtk+-3.22
 >=media-libs/clutter-1.26.2
+>=net-libs/webkit-gtk-2.16.4
+
+>=x11-libs/gtk+-3.22
 
 ## Global masks ##
 
@@ -59,6 +62,7 @@ dev-qt/qtxmlpatterns:5::gentoo
 =*/gnome*-*22*::gentoo
 =gnome-base/*-*22*::gentoo
 =gnome-extra/*-*22*::gentoo
+>=gnome-extra/sushi-3.22::gentoo
 >=app-accessibility/at-spi2-atk-2.22::gentoo
 >=app-accessibility/at-spi2-core-2.22::gentoo
 >=app-accessibility/orca-3.22.0::gentoo
